@@ -2,11 +2,11 @@
 class PolyTreeNode
     attr_reader :parent, :children, :value, :position
 
-    def root_node(position)
-        @position
-    end
+    # def root_node(position)
+    #     @position
+    # end
 
-    def initialize(value)
+    def initialize(value) #value => root_node
         @value = value
         @parent = nil
         @children = []
@@ -66,4 +66,9 @@ class PolyTreeNode
         end
         return nil
     end
+
+    def inspect
+        {"value" => @value, "children" => @children, "parent" => @parent }
+    end
 end
+
