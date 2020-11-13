@@ -1,0 +1,21 @@
+<h1>All The Drops</h1>
+
+<ul>
+  <% @drops.each do |drop| %>
+    <li>
+      <%= drop.body %> - <%= drop.author.username %>
+    </li>
+    <a href="<%= drop_url(drop) %>">
+      Show Page
+    </a>
+    <%# 
+      a tag takes an href attribute to determine what path to link to.
+      The prefix evaluates to the correct path required to link to our show page 
+      Rails will extract the id from an object passed to a prefix implicitly
+    %>
+  <% end %>
+</ul>
+
+
+<%# 1 + 2 %>
+<%# 3 + 4 %>

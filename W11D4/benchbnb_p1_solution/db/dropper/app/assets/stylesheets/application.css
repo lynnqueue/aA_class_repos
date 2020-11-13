@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* I've chained selectors to avoid styling the same element on different pages */
+.sign-up-container {
+  font-family: helvetica, sans-serif; /* listing different options for fonts, so if the browser doesn't support the font then it falls back to later options */
+  width: 550px;
+  margin: 120px auto 0; /* applies 120px to top, auto to horiz, and 0 to bot */
+  background: #1f58bf;
+  padding: 45px 25px;
+  color: white;
+  font-weight: lighter; /* you can change the weight of the font this way */
+  border-radius: 8px; /* for round corners */
+}
+
+.sign-up-container h1 {
+  font-size: 36px;
+}
+
+form.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+form.sign-up-form label {
+  margin: 16px 0;
+  font-size: 20px;
+}
+
+form.sign-up-form input {
+  height: 40px;
+  font-size: 20px;
+  padding: 0 8px;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form.sign-up-form input[type="submit"] {
+  width: 130px;
+  height: auto;
+  background-color: #2ec62e;
+  color: white;
+  outline: 0; /* removing default styling on a button element */
+  border: 0; /* removing default styling on a button element */
+  padding: 16px 0;
+  text-transform: uppercase; /* you can use styles to change casing of your text */
+  margin: 38px 0 20px; 
+  font-size: 16px;
+  cursor: pointer; /* check out w3school for other options for setting your cursor */
+}
+
+form.sign-up-form input[type="submit"]:hover {
+  background-color: green;
+}
+
+form.sign-up-form p {
+  font-size: 20px;
+  text-align: center;
+}
+
+form.sign-up-form a {
+  color: white;
+}

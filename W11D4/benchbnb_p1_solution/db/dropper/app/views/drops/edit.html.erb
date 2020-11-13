@@ -1,0 +1,26 @@
+<h1>Edit This Drop</h1>
+<%= render "form", is_edit: true, drop: @drop %>
+
+<!-- <form action="<%= drop_url(@drop) %>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <%# 
+    forms always start as post. To change, we add a hidden input
+    which overrides it.
+    _method is necessary to update our form's method with this input
+  %>
+  <label>Body:
+    <input 
+      type="text" 
+      name="drop[body]" 
+      value="<%= @drop.body %>">
+  </label>
+  <label for="author_id">author_id</label>
+  <input 
+    type="text" 
+    name="drop[author_id]" 
+    id="author_id" 
+    value="<%= @drop.author_id %>"
+  >
+  <input type="submit" value="Update Drop">
+
+</form> -->

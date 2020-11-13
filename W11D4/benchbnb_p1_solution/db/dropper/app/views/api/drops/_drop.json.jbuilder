@@ -1,0 +1,1 @@
+json.extract! drop, :id, :body, :author_id

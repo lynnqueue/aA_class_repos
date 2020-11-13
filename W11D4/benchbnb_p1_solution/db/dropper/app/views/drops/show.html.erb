@@ -1,0 +1,11 @@
+<h1>One Single Drop</h1>
+
+<li>
+  <%= @drop.body %> - <%= @drop.author.username %>
+</li>
+<a href="<%= edit_drop_url(@drop) %>">Edit this Drop</a>
+
+<form action="<%= drop_url(@drop) %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete This Drop">
+</form>
